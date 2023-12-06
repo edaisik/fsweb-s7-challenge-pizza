@@ -1,0 +1,59 @@
+.success-page {
+  background-color: #ce2829;
+  color: #faf7f2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Barlow";
+}
+.success-page img {
+  cursor: pointer;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  width: 77%;
+}
+
+.pizza {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1%;
+}
+
+.pizza p {
+  margin-bottom: 0%;
+  display: inline;
+  text-align:left;
+  font-family: "Barlow";
+}
+
+.siparis-toplami {
+  display: flex;
+  width: 21%;
+  flex-direction: column;
+  margin-top: 5%;
+  margin: auto;
+  border: 1px solid white;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.siparis-toplami h3 {
+  width: 40%;
+  margin: auto;
+  margin-top: 5%;
+  font-family: "Barlow";
+}
+
+.siparis-toplami p {
+  text-align: left;
+  margin-left: 5%;
+  width: 50%;
+  font-family: "Barlow";
+}
