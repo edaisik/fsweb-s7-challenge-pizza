@@ -17,9 +17,9 @@ const OrderForm = () => {
   const [formErrs, setFormErrs] = useState({
     boyut: "",
     hamur: "",
-    malzemeler: [],
+    malzemeler: "",
     siparisNotu: "",
-    adet: 1,
+    adet: "",
   });
 
   const pizzaBilgileri = {
@@ -152,8 +152,12 @@ const OrderForm = () => {
   return (
     <div className="order-page">
       <div className="order-header">
-      <a href="./">
-          <img src={require("./Assets/logo.svg")} alt="" onClick={handleRedirectHome}/>
+        <a href="./">
+          <img
+            src={require("./Assets/logo.svg")}
+            alt=""
+            onClick={handleRedirectHome}
+          />
         </a>
       </div>
       <div className="contents">
@@ -183,7 +187,7 @@ const OrderForm = () => {
             margin: "auto",
             display: "flex",
             marginBottom: "3%",
-            fontFamily:"Barlow"
+            fontFamily: "Barlow",
           }}
         >
           <h2 style={{ width: "75%" }}>{pizzaBilgileri.fiyat + "₺"}</h2>
@@ -194,7 +198,6 @@ const OrderForm = () => {
             {pizzaBilgileri.begenenSayisi}
           </p>
         </div>
-
         <p
           style={{
             width: "40%",
@@ -334,6 +337,7 @@ const OrderForm = () => {
               placeholder="Siparişinize eklemek istediğniz bir not var mı?"
             />
           </div>
+
           <div className="adet-toplam">
             <div className="adet-button">
               <label htmlFor="adet">Adet:</label>
